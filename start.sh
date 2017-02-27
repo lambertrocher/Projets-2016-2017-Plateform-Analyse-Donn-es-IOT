@@ -2,7 +2,7 @@
 
 
 
-chmod +x test.r
+chmod +rx test.r
 ./test.r
 
 
