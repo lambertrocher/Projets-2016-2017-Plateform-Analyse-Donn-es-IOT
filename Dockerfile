@@ -25,7 +25,6 @@ RUN apt-get install libssl-dev -y
 #install influxDB
 RUN apt-get install influxdb
 
-
 ADD start.sh /start.sh
 ADD test.r /test.r
 
