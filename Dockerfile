@@ -34,7 +34,7 @@ EXPOSE 3000
 EXPOSE 8083
 EXPOSE 8086
 
-#VOLUME /var/lib/grafana
+VOLUME /var/lib/grafana
 
 RUN chmod +x /start.sh
 CMD ["/start.sh"]
