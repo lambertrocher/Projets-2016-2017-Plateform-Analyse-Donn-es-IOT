@@ -14,6 +14,8 @@ RUN apt-get install libcurl4-gnutls-dev -y
 #install openssl
 RUN apt-get install libssl-dev -y
 
+#install grafana
+RUN apt-get install grafana
 
 # install latest version of influxdb
 #RUN dnf install -y https://dl.influxdata.com/influxdb/releases/influxdb-0.13.0.x86_64.rpm

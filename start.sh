@@ -1,16 +1,13 @@
 #!/bin/bash
 
-
-
 chmod +rx test.r
 ./test.r
 
-
 # start grafana server
-#/etc/init.d/grafana-server start
+/etc/init.d/grafana-server start
 
 # run InfluxDB
-/usr/bin/influxd 
+/usr/bin/influxd
 
 # curl -G http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
 
