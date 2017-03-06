@@ -1,7 +1,7 @@
 #!/bin/bash
 
-chmod +rx test.r
-./test.r
+# chmod +rx test.r
+# ./test.r
 
 # start grafana server
 /etc/init.d/grafana-server start
