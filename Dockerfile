@@ -1,21 +1,21 @@
-FROM ubuntu
-MAINTAINER Rocher Lambert <lambert.rocher@gmail.com>
+#FROM ubuntu
+#MAINTAINER Rocher Lambert <lambert.rocher@gmail.com>
 
 # update packages
-RUN apt-get update -y
+#RUN apt-get update -y
 
 # install R
-RUN apt-get install r-base-core -y
+#RUN apt-get install r-base-core -y
 
 #install curl
-RUN apt-get install curl -y
-RUN apt-get install libcurl4-gnutls-dev -y
+#RUN apt-get install curl -y
+#RUN apt-get install libcurl4-gnutls-dev -y
 
 #install openssl
-RUN apt-get install libssl-dev -y
+#RUN apt-get install libssl-dev -y
 
 #install grafana
-RUN apt-get install grafana -y
+#RUN apt-get install grafana -y
 
 # install latest version of influxdb
 #RUN dnf install -y https://dl.influxdata.com/influxdb/releases/influxdb-0.13.0.x86_64.rpm
@@ -25,16 +25,20 @@ RUN apt-get install grafana -y
 # upload and configure for execution start.sh script
 
 #install influxDB
-RUN apt-get install influxdb
+#RUN apt-get install influxdb
 
-ADD start.sh /start.sh
-ADD test.r /test.r
+#ADD start.sh /start.sh
+#ADD test.r /test.r
 
-EXPOSE 3000
-EXPOSE 8083
-EXPOSE 8086
+#EXPOSE 3000
+#EXPOSE 8083
+#EXPOSE 8086
 
-VOLUME /var/lib/grafana
+#VOLUME /var/lib/grafana
 
-RUN chmod +x /start.sh
-CMD ["/start.sh"]
+#RUN chmod +x /start.sh
+#CMD ["/start.sh"]
+
+
+FROM nodered/node-red-docker
+RUN npm install node-red-contrib-flightaware
