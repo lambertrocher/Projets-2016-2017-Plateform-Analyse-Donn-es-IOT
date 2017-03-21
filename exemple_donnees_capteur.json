@@ -1,0 +1,17 @@
+{
+  "updatetime": 1474434001,
+  "id": 2049,
+  "disablelog": 0,
+  "tagcache": "",
+  "data": 17.47,
+  "address": "1/0/1",
+  "datahex": "06D3",
+  "units": " °C",
+  "value": 17.47,
+  "decoded": true,
+  "comment": "",
+  "name": "Température intérieure",
+  "datatype": 9
+}
+
+
