@@ -1,0 +1,33 @@
+version: "2"
+
+services:
+ visualisation:
+  image: grafana/grafana
+  ports:
+   - 3000
+  networks:
+   - default
+
+
+ bd:
+  image: influxdb
+  ports:
+   - 8083
+   - 8086
+  networks:
+   - default
+
+ r:
+  image: r-base
+  volumes:
+   - .:/home/src
+  working_dir: /home/src
+  networks:
+   - default
+
+ node-red:
+  image: larocher/projets-2016-2017-plateform-analyse-donn-es-iot
+  ports:
+   - 1880
+  networks:
+   - default
