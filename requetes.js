@@ -30,4 +30,4 @@ for (var i=0;;i< ; i++){
 
 jsonvalues=JSON.stringify(values);
 
-/* à copier dans un fichier*/ 
+/* à copier dans un fichier*/

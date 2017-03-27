@@ -31,3 +31,5 @@ services:
    - 1880
   networks:
    - default
+  volumes : 
+   - ./data:/home/data
