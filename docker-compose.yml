@@ -33,3 +33,4 @@ services:
    - default
   volumes : 
    - ./data:/home/data
+   #- ./nodered_config:/data
